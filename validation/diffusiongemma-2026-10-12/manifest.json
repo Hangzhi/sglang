@@ -1,0 +1,37 @@
+{
+  "reference_repo": "https://github.com/Hangzhi/diffusion-jev-sglang",
+  "model": "google/diffusiongemma-26B-A4B-it",
+  "model_revision": "f7f5b7f5fa82ffc52addd066915886d497f5517b",
+  "base": "20c49f12c9a1261ea0ba9b5a2b206613661494f0",
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition 96GB",
+  "datasets": {
+    "jevbench": 231,
+    "emojify": 50,
+    "tweeteval": 1000,
+    "flowers": 100
+  },
+  "note": "Fresh native SGLang tests; historical adapter is not installed. Prompt wording and GPU differ from the reference measurements.",
+  "reference_head": "a6dce88a2fc9c11b1df44d03033f1ebafd75c504",
+  "date": "2026-10-12",
+  "pytorch": "2.14.1+cu130",
+  "transformers": "5.19.0",
+  "precision": "bfloat16",
+  "tensor_parallel": 1,
+  "attention": "triton",
+  "seed": 42,
+  "canvas_tokens": 256,
+  "context_length": 8192,
+  "revisions": {
+    "pr1": {
+      "tested_commit": "e23d62c5d4f0fdd1b26d1db4983c7495056b65ee",
+      "published_commit": "16b1b8de683447385badc5c5989923fec31bd852",
+      "tree": "c949ab63e3954609c499c126189af38840b5f9f7"
+    },
+    "pr2": {
+      "tested_commit": "1bd89fb99d6ccec09563ac3ee9cbe3afbc238d40",
+      "published_commit": "6d92bcc6b0d198025fa2884dfc1a35647da3b6f9",
+      "tree": "72497fc4b3a48fae4078363f49c0b68175c38d82"
+    }
+  },
+  "publication_note": "Published via authenticated GitHub Git-data API. Commit metadata differs from local tested commits; both complete Git trees were verified identical before aligning local branch refs."
+}

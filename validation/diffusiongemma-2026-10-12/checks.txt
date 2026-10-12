@@ -1,0 +1,8 @@
+PR1: 48 unit tests + 45 subtests passed.
+Stack: 129 unit tests + 152 subtests passed.
+Repository pre-commit hooks: passed for PR1 and full stack.
+PR1 eager: six raw-score cases, mixed-candidate batch, SSE stream, score/no-score token equivalence, input-logprob HTTP 400.
+PR2 eager: two committed endpoint replay tests passed.
+PR2 FDFO/CUDA graph: two committed endpoint replay tests passed; six raw-score cases passed.
+PR2 FDFO/CUDA graph batch sizes 1,2,4: six raw-score cases and mixed-candidate batch/SSE tests passed.
+Benchmark: 1381 requests, 1378 valid, 3 HTTP 400 prefix errors counted incorrect; no retries.

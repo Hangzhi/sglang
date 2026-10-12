@@ -1,0 +1,32 @@
+[
+  {
+    "dataset": "tweeteval",
+    "id": "6e64a2415fdf017af9dc16f1efda36ea560ab62799c6218c696fea5171d58dde",
+    "expected": "\ud83d\ude0d",
+    "latency_s": 0.1510899260010774,
+    "status": 400,
+    "valid": false,
+    "correct": false,
+    "error": "{\"object\":\"error\",\"message\":\"DiffusionGemma candidate scoring requires an empty thought channel before the answer; the denoised canvas has a different prefix\",\"type\":\"BadRequest\",\"param\":null,\"code\":400}"
+  },
+  {
+    "dataset": "tweeteval",
+    "id": "2e1ab45c412a4f46cca6adcecdf8eb8bac2a558623e54c3917f8d6f8baa276b3",
+    "expected": "\ud83d\udcf7",
+    "latency_s": 0.18799089599997387,
+    "status": 400,
+    "valid": false,
+    "correct": false,
+    "error": "{\"object\":\"error\",\"message\":\"DiffusionGemma candidate scoring requires an empty thought channel before the answer; the denoised canvas has a different prefix\",\"type\":\"BadRequest\",\"param\":null,\"code\":400}"
+  },
+  {
+    "dataset": "tweeteval",
+    "id": "f950a583343b1b72d1aa9787a0a982f4e093c70d01767acab53cbb42cef3bb2c",
+    "expected": "\ud83d\udcf8",
+    "latency_s": 0.1540135889990779,
+    "status": 400,
+    "valid": false,
+    "correct": false,
+    "error": "{\"object\":\"error\",\"message\":\"DiffusionGemma candidate scoring requires an empty thought channel before the answer; the denoised canvas has a different prefix\",\"type\":\"BadRequest\",\"param\":null,\"code\":400}"
+  }
+]
