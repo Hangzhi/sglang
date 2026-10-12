@@ -1,0 +1,128 @@
+{
+  "model": "google/diffusiongemma-26B-A4B-it",
+  "base_url": "http://127.0.0.1:30000",
+  "dataset_sha256": {
+    "manifest.json": "06ba9d34680703e0fb8b17841b7c313e40dcde18ddeff9685898a0dbba158e83",
+    "test.jsonl": "013a8bee08cd7661b7215a07f9832b5d070dc9e1a5e2a1144cfe3fb66a679591"
+  },
+  "passed": false,
+  "results": [
+    {
+      "id": "6e64a2415fdf017af9dc16f1efda36ea560ab62799c6218c696fea5171d58dde",
+      "request": {
+        "model": "google/diffusiongemma-26B-A4B-it",
+        "state": "“A joyful heart makes a face cheerful.” @ Missoula, Montana",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Predict the single emoji the author most likely used with this tweet. Choose the most likely emoji from the provided options.",
+            "criteria": {
+              "❤": "red heart",
+              "😍": "smiling face with hearteyes",
+              "😂": "face with tears of joy",
+              "💕": "two hearts",
+              "🔥": "fire",
+              "😊": "smiling face with smiling eyes",
+              "😎": "smiling face with sunglasses",
+              "✨": "sparkles",
+              "💙": "blue heart",
+              "😘": "face blowing a kiss",
+              "📷": "camera",
+              "🇺🇸": "United States",
+              "☀": "sun",
+              "💜": "purple heart",
+              "😉": "winking face",
+              "💯": "hundred points",
+              "😁": "beaming face with smiling eyes",
+              "🎄": "Christmas tree",
+              "📸": "camera with flash",
+              "😜": "winking face with tongue"
+            }
+          }
+        }
+      },
+      "passed": false,
+      "status": 400,
+      "response": "{\"object\":\"error\",\"message\":\"DiffusionGemma candidate scoring requires an empty thought channel before the answer; the denoised canvas has a different prefix\",\"type\":\"BadRequest\",\"param\":null,\"code\":400}",
+      "error": "Client error '400 Bad Request' for url 'http://127.0.0.1:30000/v1/systemone'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+    },
+    {
+      "id": "2e1ab45c412a4f46cca6adcecdf8eb8bac2a558623e54c3917f8d6f8baa276b3",
+      "request": {
+        "model": "google/diffusiongemma-26B-A4B-it",
+        "state": "“I want to forget you, it’s easier that way”.Models: meleahclinton pmbrz : captwhatshisname…",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Predict the single emoji the author most likely used with this tweet. Choose the most likely emoji from the provided options.",
+            "criteria": {
+              "❤": "red heart",
+              "😍": "smiling face with hearteyes",
+              "😂": "face with tears of joy",
+              "💕": "two hearts",
+              "🔥": "fire",
+              "😊": "smiling face with smiling eyes",
+              "😎": "smiling face with sunglasses",
+              "✨": "sparkles",
+              "💙": "blue heart",
+              "😘": "face blowing a kiss",
+              "📷": "camera",
+              "🇺🇸": "United States",
+              "☀": "sun",
+              "💜": "purple heart",
+              "😉": "winking face",
+              "💯": "hundred points",
+              "😁": "beaming face with smiling eyes",
+              "🎄": "Christmas tree",
+              "📸": "camera with flash",
+              "😜": "winking face with tongue"
+            }
+          }
+        }
+      },
+      "passed": false,
+      "status": 400,
+      "response": "{\"object\":\"error\",\"message\":\"DiffusionGemma candidate scoring requires an empty thought channel before the answer; the denoised canvas has a different prefix\",\"type\":\"BadRequest\",\"param\":null,\"code\":400}",
+      "error": "Client error '400 Bad Request' for url 'http://127.0.0.1:30000/v1/systemone'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+    },
+    {
+      "id": "f950a583343b1b72d1aa9787a0a982f4e093c70d01767acab53cbb42cef3bb2c",
+      "request": {
+        "model": "google/diffusiongemma-26B-A4B-it",
+        "state": "Me and my bro realpapihours : gennyqueen @ Temescal, Oakland, California",
+        "questions": {
+          "decision": {
+            "type": "choice",
+            "instructions": "Predict the single emoji the author most likely used with this tweet. Choose the most likely emoji from the provided options.",
+            "criteria": {
+              "❤": "red heart",
+              "😍": "smiling face with hearteyes",
+              "😂": "face with tears of joy",
+              "💕": "two hearts",
+              "🔥": "fire",
+              "😊": "smiling face with smiling eyes",
+              "😎": "smiling face with sunglasses",
+              "✨": "sparkles",
+              "💙": "blue heart",
+              "😘": "face blowing a kiss",
+              "📷": "camera",
+              "🇺🇸": "United States",
+              "☀": "sun",
+              "💜": "purple heart",
+              "😉": "winking face",
+              "💯": "hundred points",
+              "😁": "beaming face with smiling eyes",
+              "🎄": "Christmas tree",
+              "📸": "camera with flash",
+              "😜": "winking face with tongue"
+            }
+          }
+        }
+      },
+      "passed": false,
+      "status": 400,
+      "response": "{\"object\":\"error\",\"message\":\"DiffusionGemma candidate scoring requires an empty thought channel before the answer; the denoised canvas has a different prefix\",\"type\":\"BadRequest\",\"param\":null,\"code\":400}",
+      "error": "Client error '400 Bad Request' for url 'http://127.0.0.1:30000/v1/systemone'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+    }
+  ]
+}

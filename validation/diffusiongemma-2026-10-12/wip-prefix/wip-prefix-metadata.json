@@ -1,0 +1,57 @@
+{
+  "local_tested_commit": "40d0eef59cb0adaac592eda031b2da8d815ece47",
+  "published_commit": "74e6ea716b0493e3d5f9bede67107ee8cf580f22",
+  "identical_tree": "73c123b202ca6ed09b1736054a46f4165d340153",
+  "test_exit_code": 1,
+  "http_statuses": [
+    400,
+    400,
+    400
+  ],
+  "retries": 0,
+  "checkpoint_revision": "f7f5b7f5fa82ffc52addd066915886d497f5517b",
+  "hardware": "NVIDIA RTX PRO 6000 Blackwell Server Edition 96GB",
+  "sampler_config": {
+    "seed": 42
+  },
+  "execution": "eager, BF16, TP1, Triton, full 256-token canvas",
+  "pre_commit": "All applicable repository hooks passed for both changed files",
+  "command": "python test/manual/dllm/reproduce_diffusiongemma_prefix.py --data-dir /home/ubuntu/diffusion-jev-sglang/data/emoji-benchmark/tweeteval --output /home/ubuntu/diffusiongemma-e2e/wip-prefix-results.json",
+  "launch": {
+    "pid": 24232,
+    "command": [
+      "/home/ubuntu/diffusiongemma-e2e/venv/bin/python",
+      "-m",
+      "sglang.launch_server",
+      "--model-path",
+      "/home/ubuntu/models/diffusiongemma-26B-A4B-it",
+      "--served-model-name",
+      "google/diffusiongemma-26B-A4B-it",
+      "--dllm-algorithm",
+      "Gemma4Renoise",
+      "--dllm-algorithm-config",
+      "/home/ubuntu/diffusiongemma-e2e/renoise.json",
+      "--trust-remote-code",
+      "--dtype",
+      "bfloat16",
+      "--attention-backend",
+      "triton",
+      "--context-length",
+      "8192",
+      "--max-running-requests",
+      "1",
+      "--mem-fraction-static",
+      "0.85",
+      "--cuda-graph-backend-prefill",
+      "disabled",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "30000",
+      "--no-dllm-fdfo",
+      "--cuda-graph-backend-decode",
+      "disabled"
+    ],
+    "git_head": "40d0eef59cb0adaac592eda031b2da8d815ece47"
+  }
+}
