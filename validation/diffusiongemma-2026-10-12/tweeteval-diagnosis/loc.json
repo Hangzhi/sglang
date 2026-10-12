@@ -1,0 +1,36 @@
+{
+  "pr1": {
+    "Docs": {
+      "files": 1,
+      "added": 41,
+      "removed": 0
+    },
+    "SRT runtime": {
+      "files": 5,
+      "added": 94,
+      "removed": 5
+    },
+    "Tests": {
+      "files": 3,
+      "added": 331,
+      "removed": 4
+    }
+  },
+  "pr2": {
+    "Docs": {
+      "files": 3,
+      "added": 45,
+      "removed": 9
+    },
+    "SRT runtime": {
+      "files": 2,
+      "added": 119,
+      "removed": 9
+    },
+    "Tests": {
+      "files": 2,
+      "added": 302,
+      "removed": 1
+    }
+  }
+}

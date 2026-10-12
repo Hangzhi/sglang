@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-11",
+  "timezone": "America/Vancouver",
+  "raw_log_timezone": "UTC",
+  "pr1_head": "16b1b8de683447385badc5c5989923fec31bd852",
+  "pr2_head": "6d92bcc6b0d198025fa2884dfc1a35647da3b6f9",
+  "upstream_baseline": "20c49f12c9a1261ea0ba9b5a2b206613661494f0",
+  "expected_prefix": [
+    100,
+    45518,
+    107,
+    101
+  ],
+  "cases": [
+    {
+      "id": "6e64a2415fdf017af9dc16f1efda36ea560ab62799c6218c696fea5171d58dde",
+      "observed_prefix": [
+        100,
+        45518,
+        107,
+        1018
+      ],
+      "missing_channel_close_in_full_canvas": true,
+      "matches_upstream_baseline_first_eight_tokens": true,
+      "status_by_variant": {
+        "fdfo-graph": 400,
+        "eager": 400,
+        "fixed48": 400,
+        "fixed96": 400
+      },
+      "plain_equals_scored": true
+    },
+    {
+      "id": "2e1ab45c412a4f46cca6adcecdf8eb8bac2a558623e54c3917f8d6f8baa276b3",
+      "observed_prefix": [
+        100,
+        45518,
+        107,
+        1
+      ],
+      "missing_channel_close_in_full_canvas": true,
+      "matches_upstream_baseline_first_eight_tokens": true,
+      "status_by_variant": {
+        "fdfo-graph": 400,
+        "eager": 400,
+        "fixed48": 200,
+        "fixed96": 400
+      },
+      "plain_equals_scored": true
+    },
+    {
+      "id": "f950a583343b1b72d1aa9787a0a982f4e093c70d01767acab53cbb42cef3bb2c",
+      "observed_prefix": [
+        100,
+        45518,
+        107,
+        1
+      ],
+      "missing_channel_close_in_full_canvas": true,
+      "matches_upstream_baseline_first_eight_tokens": true,
+      "status_by_variant": {
+        "fdfo-graph": 400,
+        "eager": 400,
+        "fixed48": 400,
+        "fixed96": 400
+      },
+      "plain_equals_scored": true
+    }
+  ],
+  "shared_tests": {
+    "passed": 85,
+    "subtests_passed": 14,
+    "files": {
+      "test_joint_threshold_indel.py": 29,
+      "test_dllm_fdfo_kv_reuse.py": 6,
+      "test_setwise_score_mixin.py": 50
+    },
+    "note": "56 of these tests overlap the earlier 129-test run; do not add the two totals."
+  },
+  "other_algorithm_checks": [
+    {
+      "algorithm": "LowConfidence",
+      "fdfo": false,
+      "passed": true,
+      "forwards": 2
+    },
+    {
+      "algorithm": "LowConfidence",
+      "fdfo": true,
+      "passed": true,
+      "forwards": 2
+    },
+    {
+      "algorithm": "JointThreshold",
+      "fdfo": false,
+      "passed": true,
+      "forwards": 2
+    },
+    {
+      "algorithm": "JointThreshold",
+      "fdfo": true,
+      "passed": true,
+      "forwards": 2
+    },
+    {
+      "algorithm": "JointThresholdInDel",
+      "fdfo": false,
+      "passed": true,
+      "forwards": 2
+    },
+    {
+      "algorithm": "JointThresholdInDel",
+      "fdfo": true,
+      "passed": true,
+      "forwards": 2
+    }
+  ],
+  "code_changes": false,
+  "limitation_resolved": false
+}
